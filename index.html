@@ -7,149 +7,213 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Question No.1</h1>
-    <label for="input2">Input number for divide</label>
-    <input type="number" id="input" />
-    <button type="button" id="button2" onclick="checkDivide()">Check</button>
-    <div class="result"></div>
+    <div class="mainContainer">
+      <div class="container">
+        <h1>Question No.1</h1>
+        <label for="input2">Input number for divide</label>
+        <input type="number" id="input" />
+        <button type="button" id="button2" onclick="checkDivide()">
+          Check
+        </button>
+        <div class="result"></div>
+      </div>
+      <div class="container">
+        <h1>Question No.2</h1>
+        <label for="input">Input number for checking even or odd</label>
+        <input type="number" id="input2" />
+        <button type="button" id="button1" onclick="EvenOdd()">Check</button>
+        <div class="result2"></div>
+      </div>
 
-    <h1>Question No.2</h1>
-    <label for="input">Input number for checking even or odd</label>
-    <input type="number" id="input2" />
-    <button type="button" id="button1" onclick="EvenOdd()">Check</button>
+      <div class="container">
+        <h1>Question No.3</h1>
+        <label for="input"
+          >Input number for checking old enough or too young</label
+        >
+        <input type="number" id="input3" />
+        <button type="button" id="button3" onclick="userAge()">Check</button>
+        <div class="result3"></div>
+      </div>
 
-    <div class="result2"></div>
+      <div class="container">
+        <h1>Question No.4</h1>
+        <label for="input"> user name </label>
+        <input type="text" id="input4" />
+        <button type="button" id="button4" onclick="greetingUser()">
+          Check
+        </button>
 
-    <h1>Question No.3</h1>
-    <label for="input">Input number for checking old enough or too young</label>
-    <input type="number" id="input3" />
-    <button type="button" id="button3" onclick="userAge()">Check</button>
+        <div class="result4"></div>
+      </div>
 
-    <div class="result3"></div>
+      <div class="container">
+        <h1>Question No.5</h1>
+        <label for="input"> switch case statements </label>
+        <input type="text" id="input5" />
+        <button type="button" id="button5" onclick="checkDivideTwo()">
+          Check
+        </button>
+        <div class="result5"></div>
+      </div>
 
-    <h1>Question No.4</h1>
-    <label for="input"> user name </label>
-    <input type="text" id="input4" />
-    <button type="button" id="button4" onclick="greetingUser()">Check</button>
+      <div class="container">
+        <h1>Question No.6 not completed</h1>
+        <label for="input"> Check number or string </label>
+        <input type="text" id="input6" />
+        <button type="button" id="button6" onclick="checkDivideTwo()">
+          Check
+        </button>
 
-    <div class="result4"></div>
+        <div class="result5"></div>
+      </div>
 
-    <h1>Question No.5</h1>
-    <label for="input"> switch case statements </label>
-    <input type="text" id="input5" />
-    <button type="button" id="button5" onclick="checkDivideTwo()">Check</button>
 
-    <div class="result5"></div>
+      <div class="container">
+        <h1>Question No.7 not completed</h1>
+        <label for="input">Check number or string</label>
+        <input type="number" id="input7" placeholder="input any number" />
+        <input type="number" id="inputA7" placeholder="input any number" />
+        <input type="text" id="inputOperator7" placeholder="input operator" />
+        <button type="button" id="button7" onclick="checkOperator()">
+          Check
+        </button>
+        <div class="result7"></div>
+      </div>
 
-    <!-- 
+      <div class="container">
+        <h1>Question No.8</h1>
+        <label for="input">Enter a time (in 24-hour format):</label>
+        <input type="text" id="input8" placeholder="1200" />
+        <button type="button" id="button8" onclick="timeSwitch()">Check</button>
 
-    <h1>Question No.6 not completed </h1>
-    <label for="input"> Check number or string </label>
-    <input type="text" id="input6">
-    <button type="button" id="button6" onclick="checkDivideTwo()">Check</button>
-    
-    <div class="result5"></div>
-    <h1>Question No.7 not completed </h1>
-    <label for="input"> Check number or string </label>
-    <input type="text" id="input6">
-    <button type="button" id="button6" onclick="checkDivideTwo()">Check</button>
-    
-    <div class="result7"></div> -->
+        <div class="result8"></div>
+      </div>
 
-    <h1>Question No.7 not completed</h1>
-    <label for="input">Check number or string</label>
-    <input type="number" id="input7" placeholder="input any number" />
-    <input type="number" id="inputA7" placeholder="input any number" />
-    <input type="text" id="inputOperator7" placeholder="input operator" />
+      <div class="container">
+        <h1>
+          Question No.9 nahi kya (leap year smjh nahi aya or na hi condition)
+        </h1>
+        <label for="input">Enter a time (in 24-hour format):</label>
+        <input type="text" id="input8" />
+        <button type="button" id="button8" onclick="timeSwitch()">Check</button>
 
-    <button type="button" id="button7" onclick="checkOperator()">Check</button>
+        <div class="result8"></div>
+      </div>
 
-    <div class="result7"></div>
+      <div class="container">
+        <h1>Question No.10</h1>
+        <label for="input">Enter password in both fields </label>
+        <input type="password" id="input10" placeholder="your password " />
+        <input
+          type="password"
+          id="inputA10"
+          placeholder="confirm your password"
+        />
+        <button type="button" id="button10" onclick="passwordMatch()">
+          Check
+        </button>
 
-    <h1>Question No.8</h1>
-    <label for="input">Enter a time (in 24-hour format):</label>
-    <input type="text" id="input8" placeholder="1200" />
-    <button type="button" id="button8" onclick="timeSwitch()">Check</button>
+        <div class="result10"></div>
+      </div>
 
-    <div class="result8"></div>
+      <div class="container11">
+        <h1>Question No.11</h1>
+        <label for="input">Enter your Name </label>
+        <input type="text" id="input11" placeholder="your good name" />
+        <button type="text" id="button11" onclick="nameMatch()">Check</button>
 
-    <h1>Question No.9 nahi kya (leap year smjh nahi aya or na hi condition)</h1>
-    <label for="input">Enter a time (in 24-hour format):</label>
-    <input type="text" id="input8" />
-    <button type="button" id="button8" onclick="timeSwitch()">Check</button>
+        <div class="result11"></div>
+      </div>
 
-    <div class="result8"></div>
+      <div class="container12">
+        <h1>Question No.12</h1>
+        <label for="input">Enter time in 24 hour format </label>
+        <input type="text" id="input12" placeholder="12" />
+        <button type="text" id="button12" onclick="timeGreetings()">
+          Check
+        </button>
 
-    <h1>Question No.10</h1>
-    <label for="input">Enter password in both fields </label>
-    <input type="password" id="input10" placeholder="your password " />
-    <input type="password" id="inputA10" placeholder="confirm your password" />
-    <button type="button" id="button10" onclick="passwordMatch()">Check</button>
+        <div class="result12"></div>
+      </div>
 
-    <div class="result10"></div>
+      <div class="container13">
+        <h1>Question No.13</h1>
+        <label for="input">Enter numbers </label>
+        <input type="number" id="input13" placeholder="any number" />
+        <input type="number" id="inputA13" placeholder="any number" />
+        <button type="text" id="button13" onclick="checkIntegers()">
+          Check
+        </button>
+        <div class="result13"></div>
+      </div>
+      <div class="container14">
+        <h1>Question No.14</h1>
+        <label for="input">check positive or negative numbers </label>
+        <input type="number" id="input14" placeholder="any number" />
+        <button type="text" id="button14" onclick="checkNumber()">Check</button>
 
-    <h1>Question No.11</h1>
-    <label for="input">Enter your Name </label>
-    <input type="text" id="input11" placeholder="your good name" />
-    <button type="text" id="button11" onclick="nameMatch()">Check</button>
+        <div class="result14"></div>
+      </div>
 
-    <div class="result11"></div>
+      <div class="container15">
+        <h1>Question No.15</h1>
+        <label for="input">check food time </label>
+        <input type="text" id="input15" placeholder="any number" />
+        <button type="text" id="button15" onclick="checkFoodTime()">
+          Check
+        </button>
 
-    <h1>Question No.12</h1>
-    <label for="input">Enter time in 24 hour format </label>
-    <input type="text" id="input12" placeholder="12" />
-    <button type="text" id="button12" onclick="timeGreetings()">Check</button>
+        <div class="result15"></div>
+      </div>
 
-    <div class="result12"></div>
+      <div class="container16">
+        <h1>Question No.16</h1>
+        <label for="input"> Check Data type </label>
+        <input type="text" id="input16" placeholder="any text or number" />
+        <button type="text" id="button16" onclick="checkDataType()">
+          Check
+        </button>
 
-    <h1>Question No.13</h1>
-    <label for="input">Enter numbers </label>
-    <input type="number" id="input13" placeholder="any number" />
-    <input type="number" id="inputA13" placeholder="any number" />
-    <button type="text" id="button13" onclick="checkIntegers()">Check</button>
+        <div class="result16"></div>
+      </div>
 
-    <div class="result13"></div>
+      <div class="container18">
+        <h1>Question No.17 nahi kya (logic smjh nhi a rahi )</h1>
+      </div>
 
-    <h1>Question No.14</h1>
-    <label for="input">check positive or negative numbers </label>
-    <input type="number" id="input14" placeholder="any number" />
-    <button type="text" id="button14" onclick="checkNumber()">Check</button>
+      <div class="container18">
+        <h1>Question No.18</h1>
+        <label for="input"> Check input is true or false </label>
+        <input type="text" id="input18" placeholder=" number" />
+        <input type="text" id="inputA18" placeholder=" number" />
+        <button type="text" id="button18" onclick="comparisonOperators()">
+          Check
+        </button>
 
-    <div class="result14"></div>
+        <div class="result18"></div>
+      </div>
 
-    <h1>Question No.15</h1>
-    <label for="input">check food time </label>
-    <input type="text" id="input15" placeholder="any number" />
-    <button type="text" id="button15" onclick="checkFoodTime()">Check</button>
+      <div class="container19">
+        <h1>Question No.19</h1>
+        <label for="input"> Enter month number </label>
+        <input type="text" id="input19" placeholder=" number" />
+        <button type="text" id="button19" onclick="monthNumbering()">
+          Check
+        </button>
 
-    <div class="result15"></div>
+        <div class="result19"></div>
+      </div>
 
-    <h1>Question No.16</h1>
-    <label for="input"> Check Data type </label>
-    <input type="text" id="input16" placeholder="any text or number" />
-    <button type="text" id="button16" onclick="checkDataType()">Check</button>
-
-    <div class="result16"></div>
-    
-    <h1>Question No.17 nahi kya (logic smjh nhi a rahi )</h1>
-    
-    <h1>Question No.18</h1>
-    <label for="input"> Check input is true or false </label>
-    <input type="text" id="input18" placeholder=" number" />
-    <input type="text" id="inputA18" placeholder=" number" />
-    <button type="text" id="button18" onclick="comparisonOperators()">Check</button>
-
-    <div class="result18"></div>
-
-    
-    <h1>Question No.19</h1>
-    <label for="input"> Check input is true or false </label>
-    <input type="text" id="input19" placeholder=" number" />
-    <button type="text" id="button18" onclick="comparisonOperators()">Check</button>
-
-    <div class="result18"></div>
-
+      <div class="container20">
+        <h1>Question No.20</h1>
+        <label for="input20">Conditional ternary Operator:</label>
+        <input type="text" id="input20" placeholder="age" />
+        <button id="button20" onclick="ternaryOperator()">Check</button>
+        <div class="result20"></div>
+      </div>
+    </div>
 
     <script src="./app.js"></script>
+    <script src="./array.js"></script>
   </body>
 </html>

@@ -301,13 +301,33 @@ function monthNumbering() {
         result19.textContent = ` september `;
     } else if (input19 == 10) {
         result19.textContent = ` october `;
-    } else if (input19 == 2) {
-        result19.textContent = ` february `;
-    }
-
-    else {
+    } else if (input19 == 11) {
+        result19.textContent = ` november `;
+    } else if (input19 == 12) {
+        result19.textContent = ` december `;
+    } else {
         result19.textContent = "write 12 month numbers ";
     }
 }
+
+
+//Question No. 20
+
+function ternaryOperator() {
+    let input20 = document.querySelector("#input20").value;
+    let result20 = document.querySelector(".result20");
+
+    let age = parseInt(input20); // Convert input to an integer
+
+    let voteable = (age < 18) ? "Too young" : "Old enough";
+
+    result20.textContent = "The person is " + voteable + " to vote.";
+}
+
+
+
+
+
+
 
 
