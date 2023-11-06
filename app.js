@@ -188,11 +188,126 @@ function checkIntegers() {
         result13.innerHTML = `<h3>${input13} is greater than ${inputA13}</h3>`;
     } else if (inputA13 > input13) { // Corrected comparison here
         result13.innerHTML = `<h3>${input13} is smaller than ${inputA13}</h3>`;
-    } else if (input13 === inputA13 ) {
+    } else if (input13 === inputA13) {
         result13.innerHTML = `<h3> both numbers are equal</h3>`;
-        
+
     } else {
-        
+
         alert("Please enter values in numbers");
     }
 }
+
+
+//question No. 14
+
+
+function checkNumber() {
+    let input14 = document.querySelector("#input14").value;
+    let result14 = document.querySelector(".result14");
+
+    if (input14 > 0) {
+        result14.textContent = " positive number ";
+    } else if (input14 < 0) {
+        result14.textContent = " negative number ";
+    } else {
+        result14.textContent = " number is zero ";
+    }
+}
+
+
+
+//question No. 15
+
+
+function checkFoodTime() {
+    let input15 = document.querySelector("#input15").value;
+    let result15 = document.querySelector(".result15");
+
+    if (input15 >= 6 && input15 <= 9) {
+        result15.textContent = " Breakfast is served ";
+    } else if (input15 >= 11 && input15 <= 13) {
+        result15.textContent = "Time for lunch ";
+    } else if (input15 >= 17 && input15 <= 20) {
+        result15.textContent = "It's dinner time ";
+    }
+    else {
+        result15.textContent = " Sorry, you'll have to wait, or go get a snack ";
+    }
+}
+
+
+
+//question No. 16
+
+
+function checkDataType() {
+    let input16 = document.querySelector("#input16").value;
+    let result16 = document.querySelector(".result16");
+
+    if (typeof input16 === 'String') {
+        result16.textContent = " String ";
+    } else if (!isNaN(input16) === Number) {
+        result16.textContent = "number ";
+    } else if (input16 === "true" || input16 === "false") {
+        result16.textContent = "boolean ";
+    } else {
+        result16.textContent = "undefined or other data type  ";
+    }
+}
+
+
+//question No. 18
+
+
+function comparisonOperators() {
+    let input18 = parseFloat(document.querySelector("#input18").value);
+    let inputA18 = parseFloat(document.querySelector("#inputA18").value);
+    let result18 = document.querySelector(".result18");
+
+    if (input18 === inputA18) {
+        result18.textContent = ` ${input18} is equal to ${inputA18}`;
+    } else if (input18 != inputA18) {
+        result18.textContent = ` ${input18} is not equal to ${inputA18}`;
+    } else {
+        result18.textContent = "undefined ";
+    }
+}
+
+
+//question No. 19
+
+
+function monthNumbering() {
+    let input19 = parseFloat(document.querySelector("#input19").value);
+    let result19 = document.querySelector(".result19");
+
+    if (input19 == 1) {
+        result19.textContent = ` january `;
+    } else if (input19 == 2) {
+        result19.textContent = ` february `;
+    } else if (input19 == 3) {
+        result19.textContent = ` march `;
+    } else if (input19 == 4) {
+        result19.textContent = ` april `;
+    } else if (input19 == 5) {
+        result19.textContent = ` may `;
+    } else if (input19 == 6) {
+        result19.textContent = ` june `;
+    } else if (input19 == 7) {
+        result19.textContent = ` july `;
+    } else if (input19 == 8) {
+        result19.textContent = ` august `;
+    } else if (input19 == 9) {
+        result19.textContent = ` september `;
+    } else if (input19 == 10) {
+        result19.textContent = ` october `;
+    } else if (input19 == 2) {
+        result19.textContent = ` february `;
+    }
+
+    else {
+        result19.textContent = "write 12 month numbers ";
+    }
+}
+
+
