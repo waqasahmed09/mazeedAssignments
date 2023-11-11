@@ -118,97 +118,14 @@
 
 //   let fruit = ["apple", "banana", "mango", "orange", "strawberry"];
 
+// let studentsScore = [320, 560, 420, 421, 124];
+// console.log(`score of students: ${studentsScore}`);
 
-//   for (let i = 0; i < fruit.length; i++) {
-//   console.log(fruit[i]);   
-// }
-
-// for (let i = 0; i < fruit.length; i++) {
-//     console.log(` Element at Index ${i} is ${fruit[i]}`);
-// }
+// studentsScore.sort();
+// console.log(`sorted score of students: ${studentsScore}`);
 
 
-
-// let numOfItems = +prompt("enter value to input items");
-
-// let itemsOfArray = [];
-
-// for (let i = 0; i < numOfItems; i++) {
-//     let numOfItems2 = prompt(`Enter items to keep in the array ${i}: `)
-//     itemsOfArray.push(numOfItems2)
-// // }
-
-
-// // console.log(`number of items in the array ${numOfItems}`);
-// // console.log(itemsOfArray);
-
-
-// //7
-
-
-// //  let pandraTkGinti = document.querySelector("#pandraTkGinti");
-
-// //  for ( i = 1; i <= 15; i++ ){
-// //     pandraTkGinti.textContent += ` ${i}, `;
-
-// //  }
-
-// let pandraTkGintiUlti = document.querySelector("#pandraTkGintiUlti");
-
-// for (i = 15; i >= 1; i--) {
-//     pandraTkGintiUlti.textContent += ` ${i}, `;
-
-// }
-
-
-// let even = document.querySelector("#even");
-
-// for (i = 0; i <= 20; i += 2) {
-//     even.textContent += ` ${i}, `;
-
-// }
-
-
-// let odd = document.querySelector("#odd");
-
-// for (i = 1; i <= 20; i += 2) {
-//     odd.textContent += ` ${i}, `;
-
-// }
-
-
-
-// let evenK = document.querySelector("#evenK");
-
-// for (i = 2; i <= 20; i += 2) {
-//     evenK.textContent += ` ${i}K, `;
-
-// }
-
-// let userItem = prompt("enter bakery item");
-// let bakeryItems = ["cake", "apple pie", "cookie", "chips", "patties"];
-
-// let isAvailable = false;
-// for (let i = 0; i < bakeryItems.length; i++) {
-//     if(userItem.toLowerCase() ===bakeryItems[i]){
-//         console.log(`${bakeryItems[i]} Available`)
-//         isAvailable = true;
-//         break
-//     }
-// }
-// if (isAvailable === false  ){
-//     console.log(` Halwa Poori Kha lo aj janii`);
-// }
-
-let largeNumber = [24, 53, 78, 91, 12, 99];
-console.log(largeNumber);
-
-largeNumber = largeNumber.sort();
-console.log(largeNumber);
-let largeNumber1 = largeNumber.slice(-1);
-console.log(largeNumber1.join());
-console.log(largeNumber1);
-
-
-
-
+// let fruit = ["apple", "banana", "mango", "orange", "strawberry"];
+// console.log(fruit);
+// fruit.sort();
+// console.log(`sorted fruits: ${fruit}`);
